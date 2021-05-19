@@ -1,0 +1,428 @@
+/* #__companiesから */
+
+#__companies{
+  .__container {
+    width: 95%;
+    > p {
+      font-size: 13px;
+    }
+    h2 {
+      padding: 20px;
+    }
+  }
+}
+
+.__companies-flex {
+  display: flex;
+  padding-top: 30px;
+  img {
+    width: 30%;
+    border: solid 2px $main-color;
+  }
+}
+
+.__flex-right {
+  color: gray;
+  opacity: 0.8;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: left;
+  padding-left: 20px;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+
+.__light {
+  text-decoration: underline;
+  letter-spacing: 0px;
+  padding-top: 20px;
+  font-size: 17px;
+  display: inline-block;
+}
+
+.__opa {
+  opacity: 0.7;
+  padding-top: 40px;
+}
+
+#__contents {
+  background: url(../img/classbgsp.jpg) center / cover no-repeat;
+  .__container {
+    margin-top: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    h2 {
+      color: white;
+    }
+    p {
+      color: white;
+      padding: 25px;
+      font-size: 13px;
+    }
+    ul {
+      display: inline-block;
+      width: 95%;
+      margin-top: 20px;
+      li {
+        list-style: none;
+        padding: 15px 0;
+      }
+      li + li {
+        border-top: solid 1px silver;
+        font-size: 12px;
+        font-weight: bold;
+        background-color: white;
+        border-left: solid 2px $sub-color;
+        border-right: solid 2px $sub-color;
+      }
+    }
+  }
+}
+
+.h {
+  border-radius: 0 0 10px 10px;
+  border-bottom: solid 2px $sub-color;
+}
+
+.__blue {
+  background-color: $sub-color;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.__support {
+  background-color: $sub-color;
+  color: white;
+  padding: 30px 0;
+  text-align: center;
+  line-height: 25px;
+  p {
+    width: 95%;
+    max-width: 570px;
+    margin: 0 auto;
+  }
+}
+
+
+
+#__entering {
+  .__container {
+    width: 95%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    > h3 {
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.__acordion {
+  margin-top: 10px;
+}
+
+dt {
+  font-weight: bold;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  background-color: #fdf5e0;
+  padding: 10px;
+  img {
+    width: 35px;
+    height: 35px;
+    padding: 0 15px;
+  }
+  &::after {
+    content:'';
+    display:inline-block;
+    width:1em;
+    height:1em;
+    background:url(../img/矢印アイコン\　下4.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    transition: transform .3s
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+dl > div.is-open dt::after {
+  transform: rotate(180deg)
+}
+
+dl > div.is-open dd {
+  height: 250px;
+  opacity: 1;
+  visibility: visible;
+}
+
+dd {
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  text-align: left;
+  background-color: #fdf5e0;
+  transition: .5s;
+  p {
+    padding-top: 20px;
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 20px;
+  }
+  .__fade {
+    font-weight: normal;
+    opacity: 0.7;
+    padding-bottom: 20px;
+  }
+}
+
+#__reason {
+  background: url(../img/bangkokbgsp.jpg) center / cover no-repeat ;
+  .__container {
+    width: 90%;
+    padding: 30px 0;
+    margin: 0 auto;
+    text-align: left;
+    color: white;
+    h2 {
+      text-align: center;
+      padding: 20px 0 ;
+    }
+    p, li {
+      font-size: 12px;
+      padding-bottom: 20px;
+      list-style: none;
+    }
+  }
+}
+
+#__bonus {
+  background: #f7c23b;
+  .__container {
+    width: 95%;
+    color: white;
+    line-height: 20px;
+    padding-bottom: 20px;
+    h2 {
+      color: #383e45;
+      padding: 30px 0;
+    }
+    p {
+      font-size: 13px;
+    }
+    span {
+      color: #383e45;
+    }
+  }
+}
+
+.__bonus-box {
+  margin-top: 70px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  position: relative;
+  .__box-title {
+    position: absolute;
+    padding: 0 20px;
+    color: #383e45;
+    background: #f7c23b;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    h2 {
+      font-size: 15px;
+    }
+  }
+}
+
+.__box-flex {
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px 0;
+  justify-content: space-between;
+  > p {
+    text-align: left;
+    width: 70%;
+    font-size: 13px;
+    padding-top: 10px;
+    padding-left: 30px;
+  }
+}
+
+.__n-circle {
+  width: 60px;
+  height: 60px;
+  border: solid 1px white;
+  border-radius: 50%;
+  color: $main-color;
+  background: white;
+  font-size: 13px;
+  position: relative;
+  p {
+    position: absolute;
+    top: 19px;
+    left: 10px;
+  }
+}
+
+#__philosophy {
+  background: url(../img/specialdetailsp.jpg) center / cover no-repeat;
+  .__container {
+    margin: 0 auto;
+    width: 95%;
+    color: white;
+    line-height: 20px;
+    padding: 50px 0;
+    p {
+      font-size: 13px;
+      padding: 30px 0;
+    }
+  }
+}
+
+#__message {
+  .__container {
+    width: 95%;
+    padding: 50px 0;
+    line-height: 20px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.__sub {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.__explain {
+  text-align: left;
+  font-size: 13px;
+  p {
+    padding-top: 10px;
+  }
+  ul {
+    padding: 30px 0;
+  }
+  li {
+    list-style: none;
+  }
+}
+
+#__form {
+  background: $main-color;
+  .__container {
+    width: 95%;
+    h3 {
+      padding: 40px 0;
+    }
+    p {
+      padding-bottom: 30px;
+      font-size: 13px;
+    }
+  }
+}
+
+input {
+  width: 97%;
+  height: 50px;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid white;
+  &::placeholder {
+    padding: 20px;
+    opacity: 0.7;
+  }
+}
+
+textarea {
+  width: 97%;
+  height: 100px;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid white;
+  &::placeholder {
+    color: gray;
+    opacity: 0.6;
+    padding: 6px;
+    font-size: 15px;
+  }
+}
+
+#submit {
+  height: 55px;
+  margin: 40px 0;
+  background: $contact-color;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 25px;
+  border: 1px solid $contact-color;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+#__often-questions {
+  .__container {
+    width: 95%;
+    margin: 20px auto;
+  }
+}
+
+.__question-bar {
+  background: white;
+  border: solid 1px silver;
+  font-size: 15px;
+  &::after {
+    top: 10px;
+    right: 10px;
+    opacity: 0.5;
+  }
+}
+
+.__question-explain {
+  background: white;
+}
+
+dl > div.is-open .__question-explain {
+  height: auto;
+  padding: 10px 0 30px 0;
+}
+
+.question-mark {
+  color: #1474ad;
+}
+
+footer {
+  font-size: 13px;
+  background: #ececec;
+  .__container {
+    padding-top: 20px;
+    padding-bottom: 5px;
+    p + p {
+      margin-top: 30px;
+    }
+  }
+  a {
+    display: inline;
+    color: $sub-color;
+  }
+}
+
+.tw-container {
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+
+
+
+
+

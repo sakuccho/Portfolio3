@@ -1,0 +1,387 @@
+.scroll-top {
+  position: fixed;
+  display: block;
+  right:50px;
+  bottom: 100px;
+  background: #ececec;
+  padding: 20px;
+  z-index: 2;
+  img {
+    width: 30px;
+  }
+}
+
+#__mainvisual {
+  background: url('../img/mainsp.jpg') center / cover no-repeat;
+  .__container {
+    width: 300px;
+    padding-bottom: 30px;
+    padding-top: 80px;
+    img {
+      width: 300px;
+      padding: 40px 0;
+    }
+    p {
+      font-size: 15px;
+      font-weight: bold;
+    }
+  }
+}
+
+#__offer {
+  background: $main-color;
+  .__container {
+    max-width: 1024px;
+    padding: 20px 0;
+    padding-bottom: 20px;
+    color: white;
+    line-height: 25px;
+    #__notice {
+      background: #f9f2f4;
+      color: #c7254e;
+      font-size: 12px;
+      width: 370px;
+      margin: 10px auto;
+      border-radius: 5px;
+      p {
+        line-height: 20px;
+      }
+    }
+    .__btn {
+      color: white;
+      background-color: $contact-color;
+      width: 95%;
+      margin: 25px auto;
+      padding: 20px 0;
+      border-radius: 50px;
+      line-height: 35px;
+      font: {
+        weight: bold;
+        size: 20px;
+      }
+    }
+    .__context {
+      p + p {
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+#__target {
+  background: url(../img/introbottom.jpg) center / cover no-repeat;
+  .__container {
+    width: 95%;
+    margin-top: 20px;
+    padding-bottom: 100px;
+    p {
+      padding-bottom: 50px;
+      line-height: 25px;
+    }
+  }
+}
+
+#border-yellow {
+  font-weight: bold;
+  background:rgba(0, 0, 0, 0) linear-gradient(transparent 70%, $main-color 0%) repeat scroll 0 0;
+}
+
+#__about {
+  background-color: $bg-color;
+  position: relative;
+  .__container {
+    padding: 20px 0;
+    width: 90%;
+    > h3 {
+      font-size: 15px;
+      line-height: 25px;
+      padding: 10px 0 30px 0;
+    }
+  }
+}
+
+.__about-circle {
+  width: 60px;
+  height: 60px;
+  font-size: 12px;
+  position: absolute;
+  background: $main-color;
+  color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px $main-color;
+  border-radius: 50%;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.__box1 {
+  border: solid 2px $main-color;
+  border-radius: 5px;
+  background-color: white;
+  padding: 5px 20px 20px 20px;
+  font-size: 10px;
+  > h3 {
+    font-size: 15px;
+    line-height: 25px;
+    padding-bottom: 10px;
+  }
+  .__flex {
+    justify-content: center;
+    flex-wrap: wrap;
+    .__flex-item {
+      text-align: center;
+      width: 120px;
+      img {
+        height:30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+#__work span{
+  color: $main-color;
+}
+
+#__work {
+  background: url(../img/aboutsecondbgsp.jpg) center / cover no-repeat;
+}
+
+.__above-container {
+  .__container {
+    > h2 {
+      color: white;
+      padding-top: 40px;
+    }
+    > p  {
+      color: white;
+      padding-top: 20px;
+    }
+  }
+}
+
+.__step {
+  background-color: white;
+  width: 90%;
+  margin: 20px auto;
+  padding: 10px 0 20px 0;
+  border-radius: 5px;
+  h3 {
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  p {
+    font-size: 12px;
+  }
+}
+
+.__step-item {
+  background-color: $main-color;
+  width: 80%;
+  margin: 10px auto;
+  padding: 3px 0;
+  color: white;
+  border-radius: 5px;
+}
+
+.__below-container {
+  background-color: $sub-color;
+  padding: 20px 0;
+  color: white;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+#__learn {
+  .__container {
+    width: 80%;
+    h2 {
+      padding: 50px 0;
+      span {
+        font-size: 10px;
+      }
+    }
+    p {
+      line-height: 25px;
+      padding-bottom: 20px;
+    }
+  }
+  img {
+    width: 90%;
+    max-width: 120px;
+  }
+}
+
+.__learns {
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.__learns-item {
+  width: 400px;
+  text-align: center;
+}
+
+#bottom-text {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 10px 0 20px 0;
+}
+
+#__benefit {
+  background-color: $bg-color;
+  .__container {
+    width: 95%;
+    padding-bottom: 30px;
+  }
+}
+
+.__key p{
+  font-weight: bold;
+}
+
+.__bene-item {
+  img {
+    padding-top: 20px;
+    width: 100%;
+    height: 125px;
+    object-fit: cover;
+  }
+  h3 {
+    color: $main-color;
+    padding: 20px 0;
+  }
+  p {
+    font-size: 13px;
+    text-align: left;
+    line-height: 20px;
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+#__future {
+  margin: 20px;
+  h2 {
+    color: $main-color;
+    padding-bottom: 10px;
+  }
+  p {
+    line-height: 15px;
+  }
+}
+
+#__benefit .__container > p {
+  font-size: 13px;
+}
+
+#__member {
+  color: white;
+  background: url(../img/teacherbgsp.jpg) center / cover no-repeat;
+  .__container {
+    padding: 70px 0;
+    width: 95%;
+    > p {
+      padding: 40px 0;
+      line-height: 20px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.__box2 {
+  padding-top: 30px;
+  margin-top: 120px;
+  line-height: 20px;
+  border: solid 2px white;
+  position: relative;
+  p {
+    padding-bottom: 20px;
+    & + p + p {
+      text-align: left;
+      width: 95%;
+      margin: 0 auto;
+    }
+  }
+} 
+
+.d img {
+  border-radius: 50%;
+}
+
+.__box2 img {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#__question {
+  background-color: $main-color;
+  .__container {
+    padding: 20px 0;
+    width: 95%;
+    .p {
+      color:white;
+      &::before {
+        border-left: solid 4px white;
+        border-top: solid 4px white;
+        top: 0;
+        left: 0;
+      }
+      
+      &::after {
+        border-right: solid 4px white;
+        border-bottom: solid 4px white;
+        bottom: 0;
+        right: 0;
+      }
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+#__question {
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -15px;
+    border: 17px solid transparent;
+    border-top: 17px solid $main-color;
+  }
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: 
+  white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $main-color;
+}
+
+
+
+
+

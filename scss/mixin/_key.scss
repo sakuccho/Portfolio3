@@ -1,0 +1,42 @@
+.__key {
+	padding: 30px;
+	position: relative;
+	max-width: 900px;
+	margin: 0 auto;
+  h2 {
+    line-height: 40px;
+  }
+}
+
+.__key::before, .__key::after {
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.__key::before {
+	border-left: solid 4px $main-color;
+	border-top: solid 4px $main-color;
+	top: 0;
+	left: 0;
+}
+
+.__key::after {
+	border-right: solid 4px $main-color;
+	border-bottom: solid 4px $main-color;
+	bottom: 0;
+	right: 0;
+}
+
+.__key-white {
+	@extend .__key;
+	&::before {
+		border-left: solid 4px white;
+		border-top: solid 4px white;
+	}
+	&::after {
+		border-right: solid 4px white;
+		border-bottom: solid 4px white;
+	}
+}

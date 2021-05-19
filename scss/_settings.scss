@@ -1,0 +1,26 @@
+html {
+  font-family: "ヒラギノ角ゴシックW3", sans-serif;
+  color: #383e45;
+  letter-spacing: 2px;
+  line-height: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.__container {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.__flex {
+  display: flex;
+}
